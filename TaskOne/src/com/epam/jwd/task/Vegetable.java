@@ -22,16 +22,6 @@ public class Vegetable {
     }
 
     public Vegetable(String name, double calories, double weight) {
-        if (calories < 0) {
-            throw new IllegalArgumentException("Can't find an ingredient with "
-                    + calories + "ccal");
-        }
-
-        if (weight < Double.MIN_NORMAL) {
-            throw new IllegalArgumentException("Can't find an ingredient with " + weight
-                    + "gramm in " + name);
-        }
-
         this.name = name;
         this.kcal100g = calories;
         this.weight = weight;
@@ -46,10 +36,6 @@ public class Vegetable {
         return name;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
     public double getCalories() {
         return kcal100g;
     }
@@ -62,20 +48,9 @@ public class Vegetable {
         return kcal100g * weight / 100.0;
     }
 
-    protected void setName(String name) {
-        this.name = name;
-    }
-
     protected void setCategory(String category) {
         this.category = category;
     }
 
-    protected void setCalories(double calories) {
-        this.kcal100g = calories;
-    }
-
-    protected void setWeight(double weight) {
-        this.weight = weight;
-    }
 
 }

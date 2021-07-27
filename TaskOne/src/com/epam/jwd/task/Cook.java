@@ -76,7 +76,7 @@ public class Cook {
                     showIngredientsForCalorie(scanner, salad);
 
                 case 4: //Return to the beginning
-                        return;
+                    return;
 
                 case 0:
                     System.exit(0);

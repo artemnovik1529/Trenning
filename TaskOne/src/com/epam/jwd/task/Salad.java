@@ -41,8 +41,8 @@ public class Salad {
         for (Vegetable vegetable : ingredients) {
             System.out.println(vegetable.toString());
         }
-    }
 
+    }
 
     public void sortIngredientsByCalorie() {
         Collections.sort(ingredients, new CaloriesComparator());
